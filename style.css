@@ -1,0 +1,88 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ludo{
+    width: 750px;
+    height: 750px;
+    border: solid 1px #000;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(15,1fr);
+    box-shadow: 0 0 6px 10px rgba(0,0,0,.2);
+}
+.bloc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rouge{
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 6;
+    background-color: red;
+}
+.rouge .case{
+    background-color: red;
+}
+.vert{
+    grid-column: 10 / span 6;
+    grid-row: 1 / span 6;
+    background-color: green;
+}
+.vert .case{
+    background-color: green;
+}
+.centre{
+    grid-column: 7 / span 3;
+    grid-row: 7 / span 3;
+    border-top: solid 75px green;
+    border-left: solid 75px red;
+    border-right: solid 75px yellow;
+    border-bottom: solid 75px blue;
+}
+.bleu{
+    grid-column: 1 / span 6;
+    grid-row: 10 / span 6;
+    background-color: blue;
+}
+.bleu .case{
+    background-color: blue;
+}
+.jaune{
+    grid-column: 10 / span 6;
+    grid-row: 10 / span 6;
+    background-color: yellow;
+}
+.jaune .case{
+    background-color: yellow;
+}
+.contener_case{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 200px;
+    height: 200px;
+    border: solid 2px #000;
+    background-color: #fff;
+}
+.contener_case > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:  solid 1.3px #555;
+}
+.grille{
+    border: solid 0.4px #444;
+}
