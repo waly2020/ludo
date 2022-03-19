@@ -81,8 +81,20 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border:  solid 1.3px #555;
+    border:  solid 2px #000;
 }
 .grille{
-    border: solid 0.4px #444;
+    border: solid 0.4px #000;
+}
+.g_vert{
+    background-color: green;
+}
+.g_rouge{
+    background-color: red;
+}
+.g_jaune{
+    background-color: yellow;
+}
+.g_bleu{
+    background-color: blue;
 }
